@@ -128,16 +128,16 @@ def get_y_axis_3():
 def main():
     # printは説明用
     print(get_result_array())
-    x_axis = get_x_axis()
-    y_axis_1 = get_y_axis_1()
-    print(y_axis_1)
-    render_graph(x_axis, y_axis_1, "not_change.png")
-    y_axis_2 = get_y_axis_2()
-    print(y_axis_2)
-    render_graph(x_axis, y_axis_2, "change.png")
-    y_axis_3 = get_y_axis_3()
-    print(y_axis_3)
-    render_graph(x_axis, y_axis_3, "random.png")
+    # x_axis = get_x_axis()
+    # y_axis_1 = get_y_axis_1()
+    # print(y_axis_1)
+    # render_graph(x_axis, y_axis_1, "not_change.png")
+    # y_axis_2 = get_y_axis_2()
+    # print(y_axis_2)
+    # render_graph(x_axis, y_axis_2, "change.png")
+    # y_axis_3 = get_y_axis_3()
+    # print(y_axis_3)
+    # render_graph(x_axis, y_axis_3, "random.png")
 
 
 if __name__ == "__main__":
