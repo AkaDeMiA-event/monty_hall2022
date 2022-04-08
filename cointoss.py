@@ -64,6 +64,8 @@ def main():
     print(get_result_array())
     x_axis = get_x_axis()
     y_axis = get_y_axis()
+    print(x_axis)
+    print(y_axis)
     render_graph(x_axis, y_axis, "cointoss.png")
 
 
