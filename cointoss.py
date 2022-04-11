@@ -47,15 +47,15 @@ def get_y_axis():
     # 試行回数のカウント変数(確率を扱うためにfloatにする)
     count = float(0)
     # 表が出た回数のカウント変数(確率を扱うためにfloatにする)
-    front = float(0)
+    heads = float(0)
     # y_axisを作成(相対度数)
     for i in result:
         # numpyint64をネイティブのintに変換
         i = int(i)
         count += 1
         if i == 1:
-            front += 1
-        p = float(front / count)
+            heads += 1
+        p = float(heads / count)
         y_axis.append(p)
     return y_axis
 

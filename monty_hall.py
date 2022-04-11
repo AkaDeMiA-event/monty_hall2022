@@ -58,10 +58,8 @@ def get_y_axis_1():
     hit = float(0)
 
     for data in get_result_array():
-        count += 1
-        # アタリを引いた時
-        if data[0] == data[1]:
-            hit += 1
+        # pは相対度数としてください。
+        # ここから自分で書く
         p = float(hit / count)
         y_axis_1.append(p)
     return y_axis_1
@@ -75,18 +73,9 @@ def get_y_axis_2():
     hit = float(0)
     y_axis_2 = []
     for data in get_result_array():
-        count += 1
-        # ドアに番号をつける
-        doors = [0, 1, 2]
-        # アタリ
-        win = data[0]
-        # 挑戦者が選んだ扉
-        choice = data[1]
-        if win == choice:
-            # 何もしない
-            pass
-        else:
-            hit += 1
+        #ここから自分で書く
+        #アタリ扉番号をwin　　という変数にして
+        #選ぶ扉番号をchoice という変数にしてください。
         p = float(hit / count)
         y_axis_2.append(p)
     return y_axis_2
@@ -99,8 +88,6 @@ def get_y_axis_3():
     hit = float(0)
     for data in get_result_array():
         count += 1
-        # ドアに番号をつける
-        doors = [0, 1, 2]  # ドアに番号をつける
         # アタリ
         win = data[0]
         # 挑戦者が選んだ扉
@@ -128,16 +115,16 @@ def get_y_axis_3():
 def main():
     # printは説明用
     print(get_result_array())
-    x_axis = get_x_axis()
-    y_axis_1 = get_y_axis_1()
-    print(y_axis_1)
-    render_graph(x_axis, y_axis_1, "not_change.png")
-    y_axis_2 = get_y_axis_2()
-    print(y_axis_2)
-    render_graph(x_axis, y_axis_2, "change.png")
-    y_axis_3 = get_y_axis_3()
-    print(y_axis_3)
-    render_graph(x_axis, y_axis_3, "random.png")
+    # x_axis = get_x_axis()
+    # y_axis_1 = get_y_axis_1()
+    # print(y_axis_1)
+    # render_graph(x_axis, y_axis_1, "not_change.png")
+    # y_axis_2 = get_y_axis_2()
+    # print(y_axis_2)
+    # render_graph(x_axis, y_axis_2, "change.png")
+    # y_axis_3 = get_y_axis_3()
+    # print(y_axis_3)
+    # render_graph(x_axis, y_axis_3, "random.png")
 
 
 if __name__ == "__main__":
